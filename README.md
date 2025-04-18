@@ -20,6 +20,9 @@ Tool per trasformare facilmente i dati di un form in documenti Word (.docx).
   - Indirizzo di residenza (via e numero civico): __{indirizzoResidenza}__
   - Città di residenza: __{cittàResidenza}__
   - Sigla provincia di residenza: __{provinciaResidenza}__
+ 
+## Document model (.docx)
+![Screenshot (6)](https://github.com/user-attachments/assets/479db0ba-c817-440c-b8c2-bef13f0672ff)
 
 ## Try it!
 [Form2Doc](https://form2doc.netlify.app/)
