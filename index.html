@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form2Doc</title>
+        <link rel="icon" href="./favicon_io/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" href="./favicon_io/apple-touch-icon.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        <h1>Modulo per Generazione Documento</h1>
+
+        <hr/>
+            <label style="margin: 1em 0 1em 0;">Carica modello di documento:
+                <input type="file" id="modelloFile" accept=".docx" required style="width: fit-content;">
+            </label>
+        <hr/>
+
+        <form id="form">
+            <div style="margin: 1em 0 1em 0">
+                <label for="nomeAzienda">
+                    Nome Azienda:
+                    <input type="text" id="nomeAzienda" name="nomeAzienda" style="text-transform: capitalize;"/>
+                </label>
+
+                <div>
+                    <h4 style="margin: 1em 0 0 0">Indirizzo:</h4>
+                    <div class="flex">
+                        <label for="città">
+                            Città:
+                            <input type="text" id="città" name="città" style="text-transform: capitalize;"/>
+                        </label>
+
+                        <label for="provincia">
+                            Sigla provincia:
+                            <input type="text" size="2" maxlength="2" id="provincia" name="provincia" style="text-transform: uppercase;"/>
+                        </label>
+                    
+                        <label for="indirizzo">
+                            Via e numero civico:
+                            <input type="text" id="indirizzo" name="indirizzo" style="text-transform: capitalize;"/>
+                        </label>
+                    </div>
+                </div>
+        
+                <label for="partitaIva">
+                    P.IVA:
+                    <input type="text" size="11" maxlength="11" pattern="\d{11}" inputmode="numeric" id="partitaIVA" name="partitaIva"/>
+                </label>
+
+                <label for="pec">
+                    PEC:
+                    <input type="email" id="pec" name="pec"/>
+                </label>
+            </div>
+      
+            <div style="margin: 0 0 2em 0">
+                <h4 style="margin: 1em 0 0 0;">Legale Rappresentante:</h4>
+
+                <div class="flex">
+                    <label for="nomeRappresentante">
+                        Nome:
+                        <input type="text" id="nomeRappresentante" name="nomeRappresentante" style="text-transform: capitalize;"/>
+                    </label>
+                    <label for="cognomeRappresentante">
+                        Cognome:
+                        <input type="text" id="cognomeRappresentante" name="cognomeRappresentante" style="text-transform: capitalize;"/>
+                    </label>
+                    <label for="cfRappresentante">
+                        Codice Fiscale:
+                        <input type="text" size="16" maxlength="16" id="cfRappresentante" name="cfRappresentante" style="text-transform: uppercase;"/>
+                    </label>
+                </div>
+
+                <div class="flex">
+                    <label for="dataNascita">
+                        Data di nascita:
+                        <input type="date" id="dataNascita" name="dataNascita"/>
+                    </label>
+                    <label for="cittàNascita">
+                        Città di nascita:
+                        <input type="text" id="cittàNascita" name="cittàNascita" style="text-transform: capitalize;"/>
+                    </label>
+                    <label for="provinciaNascita">
+                        Sigla provincia di nascita:
+                        <input type="text" size="2" maxlength="2" id="provinciaNascita" name="provinciaNascita" style="text-transform: uppercase;"/>
+                    </label>
+                </div>
+                
+                <div class="flex">
+                    <label for="indirizzoResidenza">
+                        Via e numero civico:
+                        <input type="text" id="indirizzoResidenza" name="indirizzoResidenza" style="text-transform: capitalize;"/>
+                    </label>
+                    <label for="cittàResidenza">
+                        Città di residenza:
+                        <input type="text" id="cittàResidenza" name="cittàResidenza" style="text-transform: capitalize;"/>
+                    </label>
+                    <label for="provinciaResidenza">
+                        Sigla provincia di residenza:
+                        <input type="text" size="2" maxlength="2" id="provinciaResidenza" name="provinciaResidenza" style="text-transform: uppercase;"/>
+                    </label>
+                </div>
+            </div>
+      
+            <button type="submit">Genera documento compilato in Word</button>
+        </form>
+      
+        <script src="https://unpkg.com/pizzip@3.1.5/dist/pizzip.min.js"></script>
+        <script src="https://unpkg.com/docxtemplater@3.43.0/build/docxtemplater.js"></script>
+
+        <script src="script.js"></script>
+      </body>
+</html>

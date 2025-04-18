@@ -1,0 +1,76 @@
+body{
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    max-width: 800px;
+    margin: auto;
+    padding: 2em;
+    background-color: #ccd0dc;
+    color: #292a2c;
+}
+h1{
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+div{
+    width: 100%;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; 
+    gap: 5px;
+}
+label {
+    display: block;
+    margin-top: 1em;
+}
+hr{
+    background-color: #87879b;
+}
+input {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.2em;
+    box-sizing: border-box;
+}
+input[type="date"], input[type="file"] {
+    font-family: "Work Sans", sans-serif;
+    color: #87879b;
+}
+input::file-selector-button{
+    font-family: "Work Sans", sans-serif;
+    cursor: pointer;
+    padding: 0.2em 0.4em;
+    margin-right: 10px;
+    color: #292a2c;
+    border: thin solid #87879b;
+    border-radius: 2px;
+    background-color: #e8e8ee;
+}
+input:focus{
+    outline-color: #d37de4;
+}
+button {
+    font-family: "Work Sans", sans-serif;
+    cursor: pointer;
+    width: fit-content;
+    margin-top: 2em;
+    padding: 1em 1.6em;
+    font-size: 1em;
+    font-weight: 500;
+    background-color: #7089bc;
+    border-radius: 5px;
+    border: none;
+    color: #292a2c;
+}
+button:hover{
+    background: linear-gradient(135deg, #d37de4 0%, #7089bc 100%);
+    color: #e8e8ee;
+}
+button:active{
+    box-shadow: 2px 2px 5px #87879b;
+}
