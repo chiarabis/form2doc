@@ -2,21 +2,20 @@
 Tool per trasformare facilmente i dati di un form in documenti Word (.docx).
 
 ## Requirements
-Input tag nel modello del documento:
-- Nome dell'azienda: {nomeAzienda}
-- Città sede dell'azienda: {città}
-- Sigla provincia: {provincia}
-- Indirizzo dell'azienda (via e numero civico): {indirizzo}
-- Partita IVA: {partitaIva}
-- PEC: {pec}
-
-I dati del Legale Rappresentante:
-- Nome: {nomeRappresentante}
-- Cognome: {cognomeRappresentante}
-- Codice Fiscale: {cfRappresentante}
-- Data di nascita: {dataNascita}
-- Città di nascita: {cittàNascita}
-- Sigla provincia di nascita: {provinciaNascita}
-- Indirizzo di residenza (via e numero civico): {indirizzoResidenza}
-- Città di residenza: {cittàResidenza}
-- Sigla provincia di residenza: {provinciaResidenza}
+Gli input tag nel modello del documento devono essere scritti tra parentesi graffe `{tag_da_inserire}`:
+- Nome dell'azienda: __{nomeAzienda}__
+- Città sede dell'azienda: __{città}__
+- Sigla provincia: __{provincia}__
+- Indirizzo dell'azienda (via e numero civico): __{indirizzo}__
+- Partita IVA: __{partitaIva}__
+- PEC: __{pec}__
+- I dati del Legale Rappresentante:
+  - Nome: __{nomeRappresentante}__
+  - Cognome: __{cognomeRappresentante}__
+  - Codice Fiscale: __{cfRappresentante}__
+  - Data di nascita: __{dataNascita}__
+  - Città di nascita: __{cittàNascita}__
+  - Sigla provincia di nascita: __{provinciaNascita}__
+  - Indirizzo di residenza (via e numero civico): __{indirizzoResidenza}__
+  - Città di residenza: __{cittàResidenza}__
+  - Sigla provincia di residenza: __{provinciaResidenza}__
