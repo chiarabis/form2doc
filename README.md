@@ -2,7 +2,8 @@
 Tool per trasformare facilmente i dati di un form in documenti Word (.docx).
 
 ## Requirements
-Gli input tag nel modello del documento devono essere scritti tra parentesi graffe `{tag_da_inserire}`:
+> [!NOTE]
+> Gli input tag nel modello del documento devono essere scritti tra parentesi graffe `{tag_da_inserire}`:
 - Nome dell'azienda: __{nomeAzienda}__
 - Città sede dell'azienda: __{città}__
 - Sigla provincia: __{provincia}__
