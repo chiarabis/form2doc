@@ -1,5 +1,5 @@
 # Form2Doc
-Tool per trasformare facilmente i dati di un form in documenti Word (.docx).
+Tool per trasformare facilmente i dati di un form in documenti Word (.docx) a partire da un modello con i campi modulo.
 
 ---
 ## Stack
